@@ -1,172 +1,262 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Canva Tips | Learn & Create</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canva Editing Tips | Aliya</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;
-background:#f8f5ff;color:#282044}
-header{background:white;padding:18px 6%;
-display:flex;justify-content:space-between;
-align-items:center;flex-wrap:wrap;gap:15px}
-.logo{font-size:23px;font-weight:bold;color:#5948d7}
-nav a{margin:8px;color:#38304e;
-text-decoration:none;font-weight:bold}
-.hero{text-align:center;padding:75px 15px;
-background:linear-gradient(120deg,#dceaff,#f6dcff,#ffe5f1)}
-.hero h1{font-size:40px}
-.btn{display:inline-block;background:#5948d7;
-color:white;padding:13px 22px;border-radius:25px;
-text-decoration:none;margin:8px}
-section{padding:45px 7%;text-align:center}
-.cards{display:grid;grid-template-columns:
-repeat(auto-fit,minmax(210px,1fr));gap:20px;
-margin-top:25px}
-.card{display:block;background:white;padding:25px 18px;
-border-radius:18px;text-decoration:none;color:#282044;
-box-shadow:0 5px 20px #30205b12;
-transition:transform .2s}
-.card:hover{transform:translateY(-5px)}
-.emoji{font-size:38px}
-.card h3{color:#5948d7}
-.card p{color:#666;line-height:1.6}
-.lesson{background:white;border-radius:18px;
-padding:25px;margin:18px auto;max-width:850px;
-text-align:left;line-height:1.8}
-.lesson h3{color:#5948d7}
-.about{background:#eee8ff}
-footer{background:#282044;color:white;
-padding:25px;text-align:center}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8fc;
+  color: #493847;
+}
+
+header {
+  background: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  box-shadow: 0 2px 12px #f3dce8;
+}
+
+.logo {
+  color: #d65d99;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: #604b5b;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #d65d99;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #ffe0ee, #fff5fa, #fce7f3);
+}
+
+.hero h1 {
+  font-size: 44px;
+  color: #b94d83;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  background: #d65d99;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+.btn:hover {
+  background: #b94d83;
+}
+
+section {
+  padding: 65px 8%;
+  text-align: center;
+}
+
+.section-title {
+  color: #b94d83;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: #806d7b;
+  margin-bottom: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px #f2dce8;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card .emoji {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #b94d83;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #786775;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.about {
+  background: #fff0f7;
+}
+
+.about p {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.9;
+}
+
+footer {
+  background: #573c50;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    line-height: 2.5;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  section {
+    padding: 50px 6%;
+  }
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<div class="logo">🎨 Canva Tips</div>
-<nav>
-<a href="#home">Home</a>
-<a href="#tutorials">Tutorials</a>
-<a href="#templates">Templates</a>
-<a href="#about">About</a>
-</nav>
+  <div class="logo">🌷 Canva Tips</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#tutorials">Tutorials</a>
+    <a href="#tips">Tips</a>
+    <a href="#about">About</a>
+  </nav>
 </header>
 
-<div class="hero" id="home">
-<h1>✨ Create Beautiful Designs</h1>
-<p>Learn Canva editing, Instagram designs,
-templates and creative tricks!</p>
-<a class="btn" href="#tutorials">Explore Tutorials</a>
-<a class="btn" href="#templates">Browse Templates</a>
-</div>
+<section class="hero" id="home">
+  <h1>Welcome to Canva World! 🎀</h1>
+  <p>
+    Learn Canva editing, explore creative ideas
+    and make beautiful designs with me.
+    Let's make your creativity shine! ✨
+  </p>
+  <a href="#tutorials" class="btn">Explore Tutorials</a>
+</section>
 
 <section id="tutorials">
-<h2>🌷 Explore Tutorials</h2>
-<p>Choose a topic to start learning.</p>
-<div class="cards">
-<a class="card" href="#beginners">
-<div class="emoji">🎀</div>
-<h3>Canva for Beginners</h3>
-<p>Learn the basics step by step.</p>
-<strong>Open Tutorial →</strong>
-</a>
-<a class="card" href="#instagram">
-<div class="emoji">📱</div>
-<h3>Instagram Designs</h3>
-<p>Learn to create posts and stories.</p>
-<strong>Open Tutorial →</strong>
-</a>
-<a class="card" href="#tips">
-<div class="emoji">💡</div>
-<h3>Editing Tips</h3>
-<p>Discover useful tools and tricks.</p>
-<strong>Open Tips →</strong>
-</a>
-<a class="card" href="#templates">
-<div class="emoji">🖼️</div>
-<h3>Canva Templates</h3>
-<p>Explore templates and design ideas.</p>
-<strong>View Templates →</strong>
-</a>
-</div>
-</section>
+  <h2 class="section-title">🎨 Canva Tutorials</h2>
+  <p class="subtitle">Learn designing step by step!</p>
 
-<section id="beginners">
-<h2>🎀 Canva for Beginners</h2>
-<div class="lesson">
-<h3>Lesson 1: Start with Canva</h3>
-1. Open Canva and sign in.<br>
-2. Choose a design type, such as a poster.<br>
-3. Select a blank page or a ready-made design.<br>
-4. Add text, photos and elements.<br>
-5. Download your finished design.
-</div>
-</section>
+  <div class="cards">
+    <div class="card">
+      <div class="emoji">🌸</div>
+      <h3>Canva for Beginners</h3>
+      <p>Start your design journey and learn the basics of Canva.</p>
+    </div>
 
-<section id="instagram">
-<h2>📱 Instagram Designs</h2>
-<div class="lesson">
-<h3>How to make an Instagram post</h3>
-1. Open Canva and search Instagram Post.<br>
-2. Choose a layout you like.<br>
-3. Change the text, colors and pictures.<br>
-4. Add your own style and save your design.
-<br><br>
-<a class="btn" href="https://www.canva.com/templates/"
-target="_blank">Explore Instagram Templates ↗</a>
-</div>
+    <div class="card">
+      <div class="emoji">💗</div>
+      <h3>Photo Editing</h3>
+      <p>Learn how to edit photos and create beautiful visuals.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">✨</div>
+      <h3>Social Media Designs</h3>
+      <p>Create attractive posts, stories and creative content.</p>
+    </div>
+  </div>
 </section>
 
 <section id="tips">
-<h2>💡 Canva Editing Tips</h2>
-<div class="lesson">
-<h3>Useful tricks</h3>
-• Use matching colors for a neat design.<br>
-• Use two fonts instead of too many.<br>
-• Keep enough empty space around text.<br>
-• Use Position to arrange elements.<br>
-• Use transparency for soft effects.
-</div>
-</section>
+  <h2 class="section-title">🌷 Editing Tips</h2>
+  <p class="subtitle">Little tips to make your designs beautiful!</p>
 
-<section id="templates">
-<h2>🖼️ Canva Templates</h2>
-<p>Find a design to customize for your own use.</p>
-<div class="cards">
-<div class="card">
-<div class="emoji">📸</div>
-<h3>Instagram Posts</h3>
-<p>Layouts for social media content.</p>
-<a class="btn" href="https://www.canva.com/templates/"
-target="_blank">Open Canva ↗</a>
-</div>
-<div class="card">
-<div class="emoji">📖</div>
-<h3>Presentations</h3>
-<p>Slides for lessons and projects.</p>
-<a class="btn" href="https://www.canva.com/templates/"
-target="_blank">Open Canva ↗</a>
-</div>
-<div class="card">
-<div class="emoji">💌</div>
-<h3>Invitations</h3>
-<p>Creative cards for special events.</p>
-<a class="btn" href="https://www.canva.com/templates/"
-target="_blank">Open Canva ↗</a>
-</div>
-</div>
+  <div class="cards">
+    <div class="card">
+      <div class="emoji">🎀</div>
+      <h3>Choose Your Colors</h3>
+      <p>Use 2–3 matching colors to keep your design clean.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🦋</div>
+      <h3>Beautiful Fonts</h3>
+      <p>Pair a heading font with a simple, readable font.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🌼</div>
+      <h3>Keep It Simple</h3>
+      <p>Give your text and pictures enough space to stand out.</p>
+    </div>
+  </div>
 </section>
 
 <section class="about" id="about">
-<h2>💜 About</h2>
-<p>A creative space for Canva tutorials,
-editing tips and design inspiration.</p>
+  <h2 class="section-title">💌 About Me</h2>
+  <p>
+    Hi! I'm Aliya. Welcome to my creative space!
+    Here, I share Canva editing tips, easy tutorials
+    and design inspiration to help you create
+    beautiful designs. Let's learn and create together! 💗
+  </p>
 </section>
 
 <footer>
-<p>Canva Tips | Learn • Create • Share ✨</p>
+  <p>Made with 💗 by Aliya</p>
+  <p>Canva Editing Tips © 2026</p>
 </footer>
+
 </body>
 </html>
+```
